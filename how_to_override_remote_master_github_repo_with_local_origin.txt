@@ -1,0 +1,16 @@
+1. Ensure to you can securely access your github account from terminal. This may require ssl setup.
+2. Create public repo in your github account.
+3. Copy URL to new repo.
+4. Go to terminal and 'git clone <repo>'
+5. CD to new <repo> directory.
+6. rm -rf .git directory
+7. Open Clion, create new C++ Executable Project from existing sources in <repo> directory.
+8. Do following commands ...
+git init
+git status
+git add <files and directories> e.g. downloaded udacity github repo project files
+git commit -m "initial commit"
+git remote add origin git@github.com:wfs/<repo>.git
+git push -u -f origin master
+9. Subsequent pushes can use just ...
+git push
